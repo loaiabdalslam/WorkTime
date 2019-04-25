@@ -1,16 +1,10 @@
 {
-  "background": {
-    "persistent": false,
-    "scripts": ["background.js"]
-  },
   "content_scripts": [
     {
       "js": ["content.js"],
       "matches": [
         "https://www.facebook.com/",
-         "*://*.facebook.com/*",
-         "https://www.twitter.com/",
-         "*://*.twitter.com/*"
+         "*://*.facebook.com/*"
         ]
     }
   ],
@@ -30,14 +24,12 @@
   },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqAQjAd9fZoW3HHBIEnknV7Mw4jMxcH7tw+PJFR72wMu0vLV6TzQk7vg5wbVKDGs+9uvq9TPFf8FurvldTH3yJF/tsnIoUwhcFn06/Oku3gwg22leA/wz+8bZhnrQcK8pqQuAV8npqdFky0dZsrEJBBZJxbguDq/UDAfBGaVfu4Nfb6nLXSGoJ2nUxp0gbQBdJEXqxVil6QfqO3ADjFDStA4MJqEyKWyEYa5z4eYR44O+zjjqYiKShYM4rQTBnCvdQtBUgRo9bsetqgcWA7DopZ2NgmVPktM4SCN+/oAGtDVCmMRznYo187SPgb2p+3vC/4KyoqZRbraM2CpDXtUhOQIDAQAB",
   "manifest_version": 2,
-  "name": "Mute Words",
+  "name": "Work Time",
   "permissions": [
     "storage",
     "tabs",
-    "*://*/*",
-    "contextMenus",
-    "clipboardWrite"
+    "*://*/*"
   ],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "2.0"
+  "version": "2.1"
 }
